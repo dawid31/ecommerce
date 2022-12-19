@@ -1,5 +1,26 @@
 from django.shortcuts import render
 
 # Create your views here.
-def home(request):
-    return render (request, 'EcommerceApp/home.html')
+def store(request):
+    context = {}
+    return render (request, 'EcommerceApp/store.html')
+
+
+def cart(request):
+    context = {}
+    return render (request, 'EcommerceApp/cart.html')
+
+
+def checkout(request):
+    context = {}
+    return render (request, 'EcommerceApp/checkout.html')
+
+
+def login(request):
+    context = {}
+    return render (request, 'EcommerceApp/login.html')
+
+
+def register(request):
+    context = {}
+    return render (request, 'EcommerceApp/register.html')
